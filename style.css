@@ -1,0 +1,199 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Card */
+.timer-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Date input */
+#dateInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Countdown */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+/* Individual time box */
+.time-box {
+    background: #f3f4ff;
+    width: 120px;
+    padding: 20px 10px;
+    border-radius: 12px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5b5be7;
+}
+
+.time-box small {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    background: #5b5be7;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#resetBtn {
+    background: #555;
+}
+
+/* Messages */
+#errorMessage {
+    color: #e63946;
+    min-height: 20px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #5b5be7;
+}
+
+/* -------------------------
+   Mobile responsive design
+   ------------------------- */
+
+@media (max-width: 600px) {
+
+    .timer-card {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .countdown {
+        gap: 7px;
+    }
+
+    .time-box {
+        width: 75px;
+        padding: 15px 5px;
+    }
+
+    .time-box span {
+        font-size: 1.7rem;
+    }
+
+    .time-box small {
+        font-size: 0.7rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 350px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .timer-card {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .countdown {
+        gap: 4px;
+    }
+
+    .time-box {
+        width: 65px;
+        padding: 12px 3px;
+    }
+
+    .time-box span {
+        font-size: 1.4rem;
+    }
+
+    .time-box small {
+        font-size: 0.6rem;
+    }
+}

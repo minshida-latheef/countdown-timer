@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="timer-card">
+
+            <h1>Countdown Timer</h1>
+            <p class="subtitle">Choose a date and time</p>
+
+            <!-- Date and time input -->
+            <input type="datetime-local" id="dateInput">
+
+            <!-- Error message -->
+            <p id="errorMessage"></p>
+
+            <!-- Countdown display -->
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button id="startBtn">Start Countdown</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+
+            <!-- Time's up message -->
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
