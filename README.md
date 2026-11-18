@@ -29,4 +29,4 @@ Users can set a countdown duration, start the timer, pause it, and reset it when
 
 ## 🌐 Live Demo
 
-[View Countdown Timer](YOUR_LIVE_DEMO_URL)
+[View Countdown Timer](https://minshida-latheef.github.io/countdown-timer/)
