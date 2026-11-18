@@ -27,6 +27,4 @@ Users can set a countdown duration, start the timer, pause it, and reset it when
 | JavaScript | Timer functionality |
 
 
-## 🌐 Live Demo
-
 [View Countdown Timer](https://minshida-latheef.github.io/countdown-timer/)
